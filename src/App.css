@@ -1,0 +1,229 @@
+/*utility*/
+.hidden {
+  display: none;
+}
+
+html {
+  font-size: 100%;
+}
+
+html header {
+  padding: 15px;
+}
+
+html body {
+  color: #333;
+}
+
+html .add-content {
+  padding: 15px;
+}
+
+html .add-content .nav-link {
+  position: relative;
+  padding-right: 32px;
+  color: #333;
+}
+
+html .add-content .nav-link #indicator {
+  margin-left: 6px;
+  position: absolute;
+  height: 16px;
+  width: 16px;
+  background-color: white;
+  top: 50%;
+  transform: translateY(-50%);
+  overflow: hidden;
+}
+
+html .add-content .nav-link #indicator .indicators {
+  content: '';
+  position: absolute;
+  background-color: #777;
+  width: 16px;
+  height: 2px;
+  top: 8px;
+}
+
+html .add-content .nav-link #indicator #indTop {
+  top: 3px;
+}
+
+html .add-content .nav-link #indicator #indBottom {
+  top: 13px;
+}
+
+html .add-content .nav-link #indicator.open #indMid1 {
+  animation: openLeft 0.3s forwards;
+}
+
+@keyframes openLeft {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-45deg);
+  }
+}
+
+html .add-content .nav-link #indicator.open #indMid2 {
+  animation: openRight 0.3s forwards;
+}
+
+@keyframes openRight {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(45deg);
+  }
+}
+
+html .add-content .nav-link #indicator.open #indTop {
+  animation: opentop 0.3s forwards;
+}
+
+@keyframes opentop {
+  0% {
+    top: 3px;
+  }
+  100% {
+    top: -5px;
+  }
+}
+
+html .add-content .nav-link #indicator.open #indBottom {
+  animation: openBottom 0.3s forwards;
+}
+
+@keyframes openBottom {
+  0% {
+    top: 13px;
+  }
+  100% {
+    top: 21px;
+  }
+}
+
+html .add-content .nav-link #indicator.close #indMid1 {
+  animation: closeLeft 0.3s forwards;
+}
+
+@keyframes closeLeft {
+  0% {
+    transform: rotate(-45deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+html .add-content .nav-link #indicator.close #indMid2 {
+  animation: closeRight 0.3s forwards;
+}
+
+@keyframes closeRight {
+  0% {
+    transform: rotate(45deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+html .add-content .nav-link #indicator.close #indTop {
+  animation: closetop 0.3s forwards;
+}
+
+@keyframes closetop {
+  0% {
+    top: -5px;
+  }
+  100% {
+    top: 3px;
+  }
+}
+
+html .add-content .nav-link #indicator.close #indBottom {
+  animation: closeBottom 0.3s forwards;
+}
+
+@keyframes closeBottom {
+  0% {
+    top: 21px;
+  }
+  100% {
+    top: 13px;
+  }
+}
+
+html .add-content form:first-child {
+  padding-left: 0;
+}
+
+html .add-content form:last-child {
+  padding-right: 0;
+}
+
+html .add-content form [type="submit"] {
+  padding: 5px 10px;
+}
+
+html .add-content form div {
+  width: 33%;
+  margin: auto;
+  position: relative;
+}
+
+html .add-content form div input, html .add-content form div textarea, html .add-content form div select {
+  width: 100%;
+}
+
+html .main-content {
+  padding: 15px;
+}
+
+html .Projects {
+  margin: 0;
+  padding: 0;
+}
+
+html .Projects .allProjects {
+  margin: 0;
+  padding: 0;
+}
+
+html .Projects .allProjects div.to-do {
+  background: red;
+}
+
+html .Projects .allProjects div.in-progress {
+  background: yellow;
+}
+
+html .Projects .allProjects div.finished {
+  background: green;
+}
+
+html .Projects .allProjects div ul {
+  list-style-type: none;
+  margin-bottom: 0;
+}
+
+html .Projects .allProjects div ul li {
+  position: relative;
+  margin: 15px 0;
+}
+
+html .Projects .allProjects div ul li button {
+  float: right;
+  background-color: none;
+}
+
+html .Projects .project {
+  background-color: #ddd;
+}
+
+html .Projects .OpenedProject button.closeProject {
+  float: right;
+}
